@@ -5,8 +5,8 @@
 {% block body_class %}{{ parent() }} urturn{% endblock %}
 
 
-{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
-{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block previous_work %}{{ 'homepage.work.faceit.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'faceit' }) }}{% endblock %}
 {% block next_work %}{{ 'homepage.work.derham.title' | trans }}{% endblock %}
 {% block next_link %}{{ path('portfolio_show', { slug: 'derham' }) }}{% endblock %}
 
@@ -60,7 +60,7 @@
       <ul class="row">
         <li>
           <div class="html dev">
-            <img src="/assets/img/ico/ico_html5.png">
+            <span class="icon">H</span>
             <h4 class="title-separation long-sep">
               <span></span>
               HTML 5 / CSS 3
@@ -69,7 +69,7 @@
         </li>
         <li>
           <div class="github dev">
-            <img src="/assets/img/ico/ico_github.png">
+            <span class="icon">O</span>
             <h4 class="title-separation long-sep">
               <span></span>
               Github
@@ -79,7 +79,7 @@
 
         <li>
           <div class="agile">
-            <img src="/assets/img/ico/ico_agile.png">
+            <span class="icon">a</span>
             <h4 class="title-separation long-sep">
               <span></span>
               Méthode agile de gestion de projet
@@ -88,7 +88,7 @@
         </li>
         <li>
           <div class="responsive">
-            <img src="/assets/img/ico/ico_responsive.png">
+            <span class="icon">X</span>
             <h4 class="title-separation long-sep">
               <span></span>
               Responsive Design

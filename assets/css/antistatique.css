@@ -257,6 +257,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Icon';
+  src: url('../fonts/Social-Regular.eot?v2');
+  src: url('../fonts/Social-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Social-Regular.woff?v2') format('woff'), url('../fonts/Social-Regular.ttf?v2') format('truetype'), url('../fonts/Social-Regular.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* 
 # Base styles
 
@@ -366,6 +373,57 @@ h6 {
   }
 }
 /*
+## Icon
+
+````
+<p><span class="icon">F</span> Facebook</p>
+
+<p>
+ <span class="icon">A</span> A<br />
+ <span class="icon">B</span> B<br />
+ <span class="icon">C</span> C<br />
+ <span class="icon">D</span> D<br />
+ <span class="icon">E</span> E<br />
+ <span class="icon">F</span> F<br />
+ <span class="icon">G</span> G<br />
+ <span class="icon">H</span> H<br />
+ <span class="icon">I</span> I<br />
+ <span class="icon">J</span> J<br />
+ <span class="icon">K</span> K<br />
+ <span class="icon">L</span> L<br />
+ <span class="icon">M</span> M<br />
+ <span class="icon">O</span> O<br />
+ <span class="icon">P</span> P<br />
+ <span class="icon">R</span> R<br />
+ <span class="icon">S</span> S<br />
+ <span class="icon">T</span> T<br />
+ <span class="icon">U</span> U<br />
+ <span class="icon">V</span> V<br />
+ <span class="icon">W</span> W<br />
+ <span class="icon">X</span> X<br />
+ <span class="icon">Y</span> Y<br />
+ <span class="icon">a</span> a<br />
+ <span class="icon">b</span> b<br />
+ <span class="icon">c</span> c<br />
+ <span class="icon">d</span> d<br />
+ <span class="icon">e</span> e<br />
+ <span class="icon">f</span> f<br />
+ <span class="icon">h</span> h<br />
+ <span class="icon">m</span> m<br />
+ <span class="icon">o</span> o<br />
+ <span class="icon">r</span> r<br />
+ <span class="icon">s</span> s<br />
+ <span class="icon">t</span> t<br />
+</p>
+````
+*/
+.icon {
+  font-family: 'Icon';
+  font-size: 20px;
+  font-size: 2rem;
+  padding-right: 7px;
+}
+/*
 ## Texts and base elements
 
 ````
@@ -382,7 +440,7 @@ a {
   color: #d40b6b;
 }
 a:hover {
-  color: #ec0c77;
+  color: #73063a;
 }
 /*
 ## Lists
@@ -474,10 +532,25 @@ A simple button
   font-weight: bold;
   background-color: #d40b6b;
   color: #ffffff;
+  border: 1px solid #bc0a5f;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
-  background-color: #ec0c77;
+  background-color: #73063a;
+  border: 1px solid #5b052e;
   color: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  background-color: #bc0a5f;
+  border: 1px solid #a40853;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
 }
 .clear {
   *zoom: 1;
@@ -509,6 +582,13 @@ hr {
   background-color: #d40b6b;
   height: 1px;
   margin: 40px 0 30px 0;
+}
+hr.grey {
+  background-color: #cccccc;
+}
+hr.isolated {
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .previous-sign,
 .next-sign {
@@ -874,16 +954,37 @@ footer a {
 }
 /* CONNECT */
 #newsletter .email-field {
-  line-height: 1.4em;
+  line-height: 2em;
+  padding: 0.5em 0.3em 0.4em;
+  height: 1.2em;
 }
 #newsletter .submit {
-  width: 30%;
-  color: #ffffff;
+  margin-top: 1em;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6em 0.8em;
+  font-weight: bold;
   background-color: #d40b6b;
-  border: none;
-  text-align: center;
-  line-height: 1.6em;
-  padding: 0.2em;
+  color: #ffffff;
+  border: 1px solid #bc0a5f;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+#newsletter .submit:hover {
+  background-color: #73063a;
+  border: 1px solid #5b052e;
+  color: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+#newsletter .submit:active {
+  background-color: #bc0a5f;
+  border: 1px solid #a40853;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
 }
 @media (min-width: 40.5em) {
   #connect {
@@ -990,6 +1091,9 @@ footer a {
 .works #rdr {
   background-image: url(../img/portfolio-rdr.png);
 }
+.works #faceit {
+  background-image: url(../img/portfolio-msf.png);
+}
 /*
 # icons
 
@@ -1018,6 +1122,14 @@ footer a {
   float: left;
   width: 45%;
   margin-right: 5%;
+}
+.icons .icon {
+  font-size: 80px;
+  font-size: 8rem;
+  text-align: center;
+}
+.icons h4 {
+  margin-top: 10px;
 }
 @media (min-width: 40.5em) {
   .works {
@@ -1139,6 +1251,13 @@ footer a {
 .blog-title h1 {
   margin-bottom: 0em;
 }
+.entry-meta {
+  margin-bottom: 0.6em;
+}
+.entry-meta h5 {
+  margin-top: 0;
+  padding-top: 0;
+}
 .widgettitle {
   display: none;
 }
@@ -1161,49 +1280,8 @@ footer a {
   line-height: 15px;
   padding: 0.4em 0;
 }
-.social-links a span {
-  display: block;
-  float: left;
-  width: 20px;
-  height: 15px;
-  margin-right: 0.7em;
-  background: url('../img/ico/ico_social_sprite.png') 0 0 no-repeat;
-}
-.social-links a.facebook span {
-  background-position: 0px -30px;
-}
-.social-links a.facebook span {
-  background-position: 0px -30px;
-}
-.social-links a.linkedin span {
-  background-position: 0px -60px;
-}
-.social-links a.linkedin span {
-  background-position: 0px -60px;
-}
-.social-links a.github span {
-  background-position: 0px -90px;
-}
-.social-links a.github span {
-  background-position: 0px -90px;
-}
-.social-links a.mail span {
-  background-position: 0px -120px;
-}
-.social-links a.mail span {
-  background-position: 0px -120px;
-}
-.social-links a.drupal span {
-  background-position: 0px -150px;
-}
-.social-links a.drupal span {
-  background-position: 0px -150px;
-}
-.social-links a.rss span {
-  background-position: 0px -180px;
-}
-.social-links a.rss span {
-  background-position: 0px -180px;
+.social-links a:hover .social-text {
+  text-decoration: underline;
 }
 hr.title-separation {
   border: none;
@@ -1222,6 +1300,7 @@ hr.meta-separation {
 .cover-image {
   background-color: #ccc;
   background-color: rgba(240, 240, 240, 0.8);
+  margin: 20px 0;
 }
 .cover-image img {
   display: block;
@@ -1257,9 +1336,6 @@ hr.meta-separation {
     background-repeat: repeat-x;
     float: left;
   }
-  .icon {
-    display: block;
-  }
   .title-separation span {
     display: block;
     width: 50px;
@@ -1287,16 +1363,8 @@ hr.meta-separation {
   }
 }
 @media (min-width: 1200px) {
-  .icon {
-    display: block;
-  }
   .team .title-image {
     background-position: 10% 0;
   }
 }
 /* Based on http://csswizardry.com/2013/04/shame-css/ */
-@media (min-width: 40.5em) {
-  .with-aside article {
-    margin-top: 2.2em;
-  }
-}
