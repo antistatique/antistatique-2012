@@ -1,0 +1,99 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}{{ 'job.title' | trans }} - Web Developer (80%){% endblock %}
+
+{% block meta_description%}Job de développeur web à Lausanne, Suisse. Dans une chouette agence.{% endblock %}
+{% block head_scripts %}
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        api_key: lj5b50hfde72
+    </script>
+{% endblock %}
+
+
+{% block body_class %}job{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+<div class="page-title title-image">
+    <section>
+        <h1 class="title-separation magenta-sep">
+            <span></span>
+            Web Developer (70% - 100%)
+        </h1>
+    </section>
+</div>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="page-content">
+        <h2>We are looking for a Symfony developer to join our team </h2>
+
+        <h3>What we are offering</h3>
+        <ul>
+            <li>Varied and innovative projects</li>
+            <li>Time for working on Open Source projects</li>
+            <li>A budget for attending conferences</li>
+            <li>A great café, Redbull and fruits</li>
+            <li>A table-tennis table for playing with colleagues</li>
+        </ul>
+
+        <h3>Main Responsibilities</h3>
+        <h4>Web development</h4>
+        <ul>
+            <li>PHP 5 development using the Symfony 2 framework</li>
+            <li>Javascript development</li>
+            <li>Development using Drupal</li>
+        </ul>
+
+        <h3>Qualifications and skills</h3>
+        <ul>
+            <li>Undergraduate university degree or equivalent higher education qualification</li>
+            <li>Minimum one year of web development experiencea</li>
+            <li>In-depth knowledge of new web technologies</li>
+            <li>Knowledge of Symfony 2 framework</li>
+            <li>Extensive knowledge of Javascript</li>
+            <li>Good knowledge of databases</li>
+            <li>Knowledge of HTTP and REST</li>
+            <li>Good level of French and English</li>
+            <li>Knowledge of German would be an advantage</li>
+            <li>Familiarity working with version control tools (git / subversion)</li>
+        </ul>
+
+        <h3>Requirements and personal skills</h3>
+        <ul>
+            <li>Github account holder</li>
+            <li>Curious by nature and attentive to the needs of users</li>
+        </ul>
+
+        <h3>A passion for web culture and technologies</h3>
+        <p>Help us to keep a constant eye on developments in technology and participate in knowledge-sharing (writing blog articles and presentations, running seminars etc.).</p>
+
+        <h3>Antistatique</h3>
+        <p>
+            Antistatique is a digital agency based in Lausanne, Switzerland. It is made up of seven people (four developers, one designer, one project manager and one digital strategist). We support our clients in managing their web presence, mobile applications, e-commerce and implementation of e-marketing strategies.
+        </p>
+        <p>
+            Our team is well integrated into the local web community, everyone participates in meet-ups and conferences on web-related subjects on a regular basis.  
+        </p>
+
+        <h3>Applications via</h3>
+        
+            <script type="IN/Apply"
+               data-logo="http://antistatique.net/assets/img/logo-a.png"
+               data-companyname="Antistatique"
+               data-jobtitle="Web Developer (backend)"
+               data-joblocation="Lausanne, Switzerland"
+               data-themecolor="#ed008c"
+               data-phone="required"
+               data-coverLetter="optional"
+               data-email="job@antistatique.net"
+               data-jobId="WEBDEV-2"
+            ></script>
+
+        <p>Ou <a href="mailto:job@antistatique.net?subject=subject=I am a developer, hire me">job@antistatique.net</a>.
+        </p>
+        <p>Applications received by post will be destroyed.</p>
+    </div>
+</section>
+{% endblock %}
