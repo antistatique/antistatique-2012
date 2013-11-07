@@ -23,6 +23,15 @@
             {{ 'homepage.work.title' | trans }}
         </h3>
         <div class="works">
+            <a id="electrosanne" href="{{ path('portfolio_show', { slug: 'electrosanne' }) }}">
+                <hgroup>
+                    <h3>{{ 'homepage.work.electrosanne.title' | trans }}</h3>
+                    <h5 class="title-separation x-long-sep magenta-sep">
+                        <span></span>
+                        {{ 'homepage.work.electrosanne.baseline' | trans }}
+                    </h5>
+                </hgroup>
+            </a>
             <a id="faceit" href="{{ path('portfolio_show', { slug: 'faceit' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.faceit.title' | trans }}</h3>
@@ -32,21 +41,12 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="urturn" href="{{ path('portfolio_show', { slug: 'urturn' }) }}">
+            <a id="urturn" href="{{ path('portfolio_show', { slug: 'urturn' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.urturn.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
                         <span></span>
                         {{ 'homepage.work.urturn.baseline' | trans }}
-                    </h5>
-                </hgroup>
-            </a>
-            <a id="tennislausanne" href="{{ path('portfolio_show', { slug: 'tennislausanne' }) }}" class="last">
-                <hgroup>
-                    <h3>{{ 'homepage.work.tennislausanne.title' | trans }}</h3>
-                    <h5 class="title-separation x-long-sep magenta-sep">
-                        <span></span>
-                        {{ 'homepage.work.tennislausanne.baseline' | trans }}
                     </h5>
                 </hgroup>
             </a>

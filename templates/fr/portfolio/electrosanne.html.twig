@@ -1,0 +1,136 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}Engage Urturn - Landing page, présentation de produit, Antistatique{% endblock %}
+
+{% block body_class %}{{ parent() }} urturn{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.faceit.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'faceit' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.derham.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'derham' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/electrosanne_title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      Hashtagelectrosanne
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      Partenaire de l'édition 2013 d'Electrosanne, Antistatique est chargée de mettre sur pied un concours faisant la promotion du festival.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      L'utilisation des réseaux sociaux a semblé être une évidence face à un événement comme celui-là. L'idée était de mettre en place une plateforme regroupant tous les hashtags, ces signes très prisés des réseaux, estampié "#electrosanne". Parmi toutes les publications en provenance de Twitter, Instagram et Urturn, plusieurs sont tirés au sort afin d'attribuer les différents prix. L'attrait généré par les récompenses, mais aussi par la présence d'un écran, au sein du festival, projetant les six dernières publications permet un rapide succès de la plateforme. En effet, mettre en place un tel écran permet une immersion totale de la plateforme au sein de l’événement.
+    </p>
+    <a href="http://hashtagelectrosanne.ch" class="btn">Visiter le site hashtagelectrosanne.ch</a>
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li>
+          <div class="html dev">
+            <span class="icon">H</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              HTML 5 / CSS 3
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="github dev">
+            <span class="icon">O</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Github
+            </h4>
+          </div>
+        </li>
+
+        <li>
+          <div class="agile">
+            <span class="icon">a</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Méthode agile de gestion de projet
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="responsive">
+            <span class="icon">X</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Responsive Design
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section class="isolated">
+  </section>
+  <section>
+    <div class="page-content">
+
+      {# 
+                  Design
+      Respect de la charte graphique de Urturn …
+      Reflet d’un univers musical et social
+      ux, wireframe, réflexion autour de la hièrarchie de contenu
+      #}
+
+      <h2>Une application sur mesure</h2>
+      <p>L'API développée pour l'occasion est capable de s'adapter à des sources hétérogènes afin de fournir des publications homogènes. Que ce soit Twitter, Instagram ou bien Urturn, les données extraites et affichées doivent être pareillement traitées.</p>
+      <p>
+        Un autre avantage est la possibilité de voir le contenu en temps réel. En effet, à peine posté sur les réseaux sociaux et la plateforme récupère le flux pour l’afficher. Cela permet de pouvoir rapidement constater de l’ambiance de l’événement.
+      </p>
+        </div>
+      </section>
+        <section class="isolated">
+            <img src="/assets/img/electrosanne/electrossanne_desktop.jpg" class="full-width">
+      </section>
+      <section>
+        <div class="page-content">
+      <h2>Une présence multisupport</h2>
+      <p>Principalement utilisée par des terminaux mobiles, la plateforme a été optimisée pour cette utilisation. Par l'emploi d’un design fluide, l'interface a été pensée pour être la plus polyvalente possible (Ecran TV et Desktop).</p>
+      
+            <img src="/assets/img/electrosanne/electrosanne_mobile.jpg">
+      <h2>Un projet déclinable</h2>
+      <p>
+        Penser dans un esprit de réutilisabilité, la plateforme peut être employée dans tout type d'événement public tel que des festivals, événement sportif ou manifestations. Ce projet, encore à un stade expérimental, est destiné à gagner les rives des grands événements internationaux. 
+      </p>
+
+    </div>
+  </section>
+  {% endblock %}
