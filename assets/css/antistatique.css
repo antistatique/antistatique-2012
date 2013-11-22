@@ -14,6 +14,10 @@ Automaticaly generated using [Thomas Davis](http://thomasdavis.github.com) proje
 .clearfix:after {
   clear: both;
 }
+.isolated {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 .visible-phone {
   display: none !important;
 }
