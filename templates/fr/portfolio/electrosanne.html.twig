@@ -1,14 +1,14 @@
 {% extends "fr/portfolio/base.html.twig" %}
 
-{% block title %}Engage Urturn - Landing page, présentation de produit, Antistatique{% endblock %}
+{% block title %}Hashtagelectrosanne - Plateforme sociale{% endblock %}
 
 {% block body_class %}{{ parent() }} urturn{% endblock %}
 
 
-{% block previous_work %}{{ 'homepage.work.faceit.title' | trans }}{% endblock %}
-{% block previous_link %}{{ path('portfolio_show', { slug: 'faceit' }) }}{% endblock %}
-{% block next_work %}{{ 'homepage.work.derham.title' | trans }}{% endblock %}
-{% block next_link %}{{ path('portfolio_show', { slug: 'derham' }) }}{% endblock %}
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.faceit.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'faceit' }) }}{% endblock %}
 
 {% block baseline %}
 <div class="baseline-space"></div>
@@ -59,7 +59,16 @@
     <div class="icons">
       <ul class="row">
         <li>
-          <div class="html dev">
+          <div>
+            <span class="icon">S</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Silex micro-framework
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div>
             <span class="icon">H</span>
             <h4 class="title-separation long-sep">
               <span></span>
@@ -68,26 +77,7 @@
           </div>
         </li>
         <li>
-          <div class="github dev">
-            <span class="icon">O</span>
-            <h4 class="title-separation long-sep">
-              <span></span>
-              Github
-            </h4>
-          </div>
-        </li>
-
-        <li>
-          <div class="agile">
-            <span class="icon">a</span>
-            <h4 class="title-separation long-sep">
-              <span></span>
-              Méthode agile de gestion de projet
-            </h4>
-          </div>
-        </li>
-        <li>
-          <div class="responsive">
+          <div>
             <span class="icon">X</span>
             <h4 class="title-separation long-sep">
               <span></span>
@@ -95,20 +85,35 @@
             </h4>
           </div>
         </li>
+        <li>
+          <div>
+            <span class="icon">I</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Social media
+            </h4>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <span class="icon">h</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Real time
+            </h4>
+          </div>
+        </li>
       </ul>
     </div></section>
   </div>
   <section class="isolated">
+    <div class="page-content">
+      <iframe src="http://player.vimeo.com/video/75750485?title=0&amp;byline=0&amp;portrait=0&amp;color=d40b6b" width="684" height="384" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
   </section>
   <section>
     <div class="page-content">
-
-      {# 
-                  Design
-      Respect de la charte graphique de Urturn …
-      Reflet d’un univers musical et social
-      ux, wireframe, réflexion autour de la hièrarchie de contenu
-      #}
 
       <h2>Une application sur mesure</h2>
       <p>L'API développée pour l'occasion est capable de s'adapter à des sources hétérogènes afin de fournir des publications homogènes. Que ce soit Twitter, Instagram ou bien Urturn, les données extraites et affichées doivent être pareillement traitées.</p>
