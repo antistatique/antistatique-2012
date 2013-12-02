@@ -1,0 +1,127 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}EHL - Campus Development Forum{% endblock %}
+
+{% block body_class %}{{ parent() }} ehl{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.electrosanne.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'electrosanne' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/ehl-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      EHL
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      Dans le cadre d'un workshop d'architecture pour le développement du campus de l'École Hotelière de Lausanne, des étudiants de 10 universités réparties dans le monde entier ont besoin d'une plate-forme de discussion.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Antistatique a développé un réseau social basé sur Drupal pour connecter les étudiants. Les participants du workshop échangent idées, croquis et images de synthèse via la plate-forme.
+    </p>
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li></li>
+        <li>
+          <div>
+            <span class="icon">d</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Drupal
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="icon">a</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Agile
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="icon">X</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Responsive Design
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section class="isolated">
+        <img src="/assets/img/ehl/ehl_desktop1.jpg" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Étapes de conception - Wireframe dynamique et responsive</h2>
+      <p>L'étape d'analyse et de conception permet de définir et tester la totalité des fonctionnalités de l'application. Ces schémas de l'interface sont réalisés pour prévoir les interactions et la disposition du contenu sur tous les terminaux.</p>
+        </div>
+      </section>
+      <section class="isolated">
+        <img src="/assets/img/ehl/ehl_desktop3.jpg" class="full-width">
+      </section>
+      <section>
+        <div class="page-content">
+      <h2>Gestion de communauté, codes des réseaux sociaux</h2>
+      <p>Une plate-forme comme celle-ci fonctionne quand les membres sont motivés à publier du contenu. Les codes et paradigmes des réseaux sociaux comme la mise en avant du profil de la personne sont présents dans la solution.</p>
+      <p>
+        Malgré le scepticisme qui regnait au lancement du projet, les étudiants ont participé activement sur le réseau et au-dela de nos attentes. Ils leur étaient possible de personnaliser leur profil et beaucoup ont joué le jeux. 
+      </p>
+      <p>De même que le partage de leurs projets, des posts, bref rassembler plusieurs classes d’universités différentes en une seule et même classe travaillant dans un même but  sur un projet commun.</p>
+      </div>
+    </section>
+  <section class="isolated">
+        <img src="/assets/img/ehl/ehl_desktop2.jpg" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+      <h2>Drupal, la bonne manière</h2>
+      <p>
+        Campusdevforum.net s’articule autour de plusieurs types de contenu (post, projet, école, news). Le contenu ajouté par les utilisateurs est automatiquement structuré et présenté aux mieux.
+      </p>
+      <p>Pour l’EHL, la possibilité offerte par Drupal du point de vue des droits d’accès fut indispensable. Les étudiants des différentes écoles ont pu être importés à partir de fichier Excel, évitant ainsi une tâche d’administration redondante.</p>
+
+    </div>
+  </section>
+  {% endblock %}
