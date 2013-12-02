@@ -1,0 +1,123 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}Courtiers partenaires{% endblock %}
+
+{% block body_class %}{{ parent() }} ehl{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.ehl.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'ehl' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/courtier-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      Courtiers partenaires - Application mobile immobilière
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      Pour le salon de l'immobilier ou plus généralement dans la vente, le courtier a besoin de pouvoir présenter une liste de biens à ses clients.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Antistatique a conçu et réalisé une application web pour tablettes (iPad et android) permettant de présenter des biens selon des critères de recherche. Les biens sont importés depuis la base de données de courtiers partenaires.
+    </p>
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li></li>
+        <li>
+          <div>
+            <span class="icon">z</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              SenchaTouch
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="icon">S</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Symfony
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="icon">N</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Sass
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="icon">y</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              WebService (SOAP)
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section>
+    <div class="page-content">
+
+      <h2>Une application prévue pour présenter</h2>
+      <p>L’application est pensée pour une utilisation à plusieurs personnes. Le courtier utilise l’application pour présenter une liste de bien au client. Un bouton permet d’afficher les données confidentielles comme la position exacte du bien.</p>
+      <img src="/assets/img/courtierspartenaires/courtier_mobile.jpg" class="full-width">
+      </div>
+      </section>
+      <section>
+        <div class="page-content">
+      <h2>Conversion et récolte d’informations du client</h2>
+      <p>Le client peut consulter les maisons, terrains et appartements à vendre. Si un bien l’intéresse, il peut l’ajouter à son panier (sa liste de favoris) et effectuer une demande d’informations complémentaires. Le courtier responsable du bien est alors averti via sa plateforme de gestion de clients.</p>
+      </div>
+    </section>
+  <section>
+    <div class="page-content">
+      <h2>Filtre des biens selon des critères métiers précis</h2>
+      <p>
+        Pour avoir une solution adaptée aux besoins du client, nous nous sommes intéressés au vocabulaire et aux spécificités du domaine de l’immobilier.
+      </p>
+
+    </div>
+  </section>
+  {% endblock %}
