@@ -11,9 +11,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ app.request.basepath }}/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ app.request.basepath }}/favicon.ico?v=401" />
 
-    <link href="{{ app.request.basepath }}/assets/css/antistatique.css" rel="stylesheet" type="text/css" />
+    <link href="{{ app.request.basepath }}/assets/css/antistatique.css?v=401" rel="stylesheet" type="text/css" />
 
 <!--[if lt IE 9]>
     <script src="{{ app.request.basepath }}/assets/js/html5.js"></script>
@@ -50,8 +50,8 @@ _gaq.push(['_trackPageview']);
     <header class="topbar">
         <section>
             <a class="brand" href="{{ path('homepage_i18n') }}">
-                <object data='{{ app.request.basepath }}/assets/img/logo-antistatique-w.svg' style='height:35px; width:175px;' >
-                    <img alt="antistatique" src="{{ app.request.basepath }}/assets/img/logo-antistatique.png" width="175" height="35" />
+                <object data='{{ app.request.basepath }}/assets/img/logo-antistatique-w.svg?v=401' style='height:35px; width:175px;' >
+                    <img alt="antistatique" src="{{ app.request.basepath }}/assets/img/logo-antistatique.png?v=401" width="175" height="35" />
                 </object>
             </a>
             {% include '_menu.html.twig' %}
