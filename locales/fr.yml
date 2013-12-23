@@ -28,6 +28,12 @@ homepage:
         electrosanne:
             title: Hashtagelectrosanne
             baseline: Plateforme sociale
+        ehl:
+            title: EHL
+            baseline: Campus Development Forum
+        courtierspartenaires:
+            title: Courtiers partenaires
+            baseline: Application mobile immobilière
 
 
 antistatique:
