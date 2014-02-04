@@ -39,7 +39,7 @@
 
     ?></title>
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo esc_url( home_url() ); ?>/../assets/css/antistatique.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo esc_url( home_url() ); ?>/../assets/css/antistatique.css?v=3e83083" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -90,7 +90,11 @@ _gaq.push(['_trackPageview']);
 
     <header class="topbar">
       <section>
-        <a class="brand" href="/"><img src="<?php echo esc_url( home_url() ); ?>/../assets/img/logo-antistatique.png" width="175" height="35"></a>
+      <a class="brand" href="/">
+          <object data='/assets/img/logo-antistatique-w.svg?v=3e83083' style='height:35px; width:175px;' >
+            <img alt="antistatique" src="/assets/img/logo-antistatique.png" width="175" height="35" />
+          </object>
+        </a>
         <?php get_template_part( 'aside', 'navigation' ) ?>
       </section>
     </header>
