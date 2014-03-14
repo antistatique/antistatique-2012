@@ -8,7 +8,7 @@
             <h1 class="title-separation">
                 <span></span>
                 {# {{ 'homepage.baseline' | trans }} #}
-                Nous&nbsp;sommes <a href="{{ path('team') }}">des&nbsp;artisans du&nbsp;web</a>, curieux&nbsp;et&nbsp;<a href="/blog">exigeants</a>. 
+                Nous&nbsp;sommes <a href="{{ path('team') }}">des&nbsp;artisans du&nbsp;web</a>, curieux&nbsp;et&nbsp;<a href="/blog">exigeants</a>.
             </h1>
             <a href="{{ path('contact') }}" class="action-contact">{{ 'homepage.contact' | trans }}</a>
         </section>
@@ -23,6 +23,15 @@
             {{ 'homepage.work.title' | trans }}
         </h3>
         <div class="works">
+            <a id="pierreetoile" href="{{ path('portfolio_show', { slug: 'pierreetoile' }) }}">
+                <hgroup>
+                    <h3>{{ 'homepage.work.pierreetoile.title' | trans }}</h3>
+                    <h5 class="title-separation x-long-sep magenta-sep">
+                        <span></span>
+                        {{ 'homepage.work.pierreetoile.baseline' | trans }}
+                    </h5>
+                </hgroup>
+            </a>
             <a id="billetlemillion" href="{{ path('portfolio_show', { slug: 'billetlemillion' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.billetlemillion.title' | trans }}</h3>
@@ -32,21 +41,12 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="courtierspartenaires" href="{{ path('portfolio_show', { slug: 'courtierspartenaires' }) }}">
+            <a id="courtierspartenaires" href="{{ path('portfolio_show', { slug: 'courtierspartenaires' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.courtierspartenaires.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
                         <span></span>
                         {{ 'homepage.work.courtierspartenaires.baseline' | trans }}
-                    </h5>
-                </hgroup>
-            </a>
-            <a id="ehl" href="{{ path('portfolio_show', { slug: 'ehl' }) }}" class="last">
-                <hgroup>
-                    <h3>{{ 'homepage.work.ehl.title' | trans }}</h3>
-                    <h5 class="title-separation x-long-sep magenta-sep">
-                        <span></span>
-                        {{ 'homepage.work.ehl.baseline' | trans }}
                     </h5>
                 </hgroup>
             </a>
@@ -84,9 +84,9 @@
             <blockquote cite="http://twitter.com/{{ app.twitter.username }}">
                 <p>{{ 'antistatique.loading' | trans }}</p>
                 <footer>
-                    Sur 
+                    Sur
                     <a class="twitter-link" href="http://twitter.com/{{ app.twitter.username }}" title="@{{ app.twitter.username }}">twitter</a>
-                     le 
+                     le
                     <time datetime="2012-08-23">
                         <a href="http://twitter.com/antistatique/status/238651013966479361">
                             23 Août 2012
