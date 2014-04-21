@@ -40,24 +40,27 @@
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 @icon:                  'Icon';
 
-// The "grid"
+// The grid
 @tabletBreakPoint:      40.5em;
 @bigBreakPoint:         1200px;
 
 
-/* 
-# Base styles
-
-## Responsive titles
+/*doc
+---
+title: Titles
+name: titles
+category: Base CSS
+---
 
 You can resize browser window to see how titles size change.
-````
+
+```html_example
 <h1>Title level 1</h1>
 <h2>Title level 2</h2>
 <h3>Title level 3</h3>
 <h4>Title level 4</h4>
 <h5>Title level 5</h5>
-````
+```
 */
 html{
   font-size: 10px;
@@ -71,7 +74,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: @serifFontFamily; 
+  font-family: @serifFontFamily;
   font-style: italic;
   font-weight: normal;
   line-height: 1.2em;
@@ -101,10 +104,57 @@ h3, h2, h3, h4, h5, h6{
   h5{ .font-size(14); }
 }
 
-/*
-## Icon
 
-````
+/*doc
+---
+title: Texts and lists
+name: texts_lists
+parent: titles
+---
+
+Texts and base elements
+
+```html_example
+<p>A simple paragraph with a <a href="#">link</a> in it</p>
+```
+
+List element
+```html_example
+<ul>
+  <li>list item</li>
+  <li>list item</li>
+  <li>list item</li>
+</ul>
+```
+
+*/
+p{
+  margin: 0.3em 0 0.5em 0;
+  line-height: 1.6em;
+  .font-size(16);
+}
+a{
+  color: @linkColor;
+  &:hover{
+    color: @linkColorHover;
+  }
+}
+
+ul{
+  list-style: square outside;
+}
+li{
+  margin-bottom: 0.4em;
+}
+
+/*doc
+---
+title: Icons
+name: icons
+category: Base CSS
+---
+
+```html_example
 <p><span class="icon">F</span> Facebook</p>
 
 <p>
@@ -144,7 +194,7 @@ h3, h2, h3, h4, h5, h6{
  <span class="icon">s</span> s<br />
  <span class="icon">t</span> t<br />
 </p>
-````
+```
 */
 
 .icon {
@@ -153,53 +203,38 @@ h3, h2, h3, h4, h5, h6{
   padding-right: 7px;
 }
 
+/*doc
+---
+title: Highlight
+name: highlight
+category: Base CSS
+---
 
-
-/*
-## Texts and base elements
-
-````
-<p>A simple paragraph with a <a href="#">link</a> in it</p>
-````
-*/
-p{
-  margin: 0.3em 0 0.5em 0;
-  line-height: 1.6em;
-  .font-size(16);
-}
-a{
-  color: @linkColor;
-  &:hover{
-    color: @linkColorHover;
-  }
-}
-
-/*
-## Lists
-
-List element
-````
-<ul>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-</ul>
-````
-*/
-ul{
-  list-style: square outside;
-}
-li{
-  margin-bottom: 0.4em;
-}
-
-/*
-## Highlight a block
-
-````
+```html_example
 <section class="highlight">Highlighted block</section>
-````
+```
+
+
+Quoting
+```html_example
+<blockquote>
+  <p>I believe in the Golden Rule - The Man with the Gold . . . Rules.</p>
+  <footer>
+    <span class="author">Mr. T</span>
+    from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
+  </footer>
+</blockquote>
+```
+
+Un-highlighted quote
+```html_example
+<blockquote class="unhighlight">
+  <p>I believe in the Golden Rule - The Man with the Gold ... Rules.</p>
+</blockquote>
+```
+
 */
+
 .highlight{
   background-color: #ccc;
   background-color: rgba(240, 240, 240, 0.8);
@@ -209,30 +244,9 @@ li{
   background-color: transparent;
 }
 
-/*
-## Blockquote
-
-Quoting
-````
-<blockquote>
-  <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
-  <footer>
-    <span class="author">Mr. T</span> 
-    from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
-    </footer>
-</blockquote>
-````
-
-Un-highlighted quote
-````
-<blockquote class="unhighlight">
-  <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
-</blockquote>
-````
-*/
 blockquote{
   background-color: rgba(240, 240, 240, 0.8);
-  font-family: @serifFontFamily; 
+  font-family: @serifFontFamily;
   color: @black40;
   padding: 1.3em 1.8em;
   margin: 2em 0;
@@ -248,13 +262,17 @@ blockquote{
   }
 }
 
-/*
-## Buttons
+/*doc
+---
+title: Buttons
+name: buttons
+category: Base CSS
+---
 
 A simple button
-````
+```html_example
 <a href="#" class="btn">I'm a simple button</a>
-````
+```
 */
 .btn{
   margin-top: 1em;
@@ -278,6 +296,9 @@ A simple button
     .box-shadow(1px 1px 2px 0px rgba(0,0,0,0));
   }
 }
+
+
+// Tools
 
 .clear{
   .clearfix();

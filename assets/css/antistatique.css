@@ -1,8 +1,3 @@
-/*
-# Antistatique - Style guide
-
-Automaticaly generated using [Thomas Davis](http://thomasdavis.github.com) project [kaleistyleguide](http://github.com/thomasdavis/kaleistyleguide)
-*/
 .clearfix {
   *zoom: 1;
 }
@@ -29,9 +24,6 @@ Automaticaly generated using [Thomas Davis](http://thomasdavis.github.com) proje
     display: none !important;
   }
 }
-/* 
-Our style use normalize.css v1.0.1 more infos (http://git.io/normalize)
-*/
 article,
 aside,
 details,
@@ -268,19 +260,22 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-/* 
-# Base styles
-
-## Responsive titles
+/*doc
+---
+title: Titles
+name: titles
+category: Base CSS
+---
 
 You can resize browser window to see how titles size change.
-````
+
+```html_example
 <h1>Title level 1</h1>
 <h2>Title level 2</h2>
 <h3>Title level 3</h3>
 <h4>Title level 4</h4>
 <h5>Title level 5</h5>
-````
+```
 */
 html {
   font-size: 10px;
@@ -376,10 +371,55 @@ h6 {
     font-size: 1.4rem;
   }
 }
-/*
-## Icon
+/*doc
+---
+title: Texts and lists
+name: texts_lists
+category: Base CSS
+---
 
-````
+Texts and base elements
+
+```html_example
+<p>A simple paragraph with a <a href="#">link</a> in it</p>
+```
+
+List element
+```html_example
+<ul>
+  <li>list item</li>
+  <li>list item</li>
+  <li>list item</li>
+</ul>
+```
+
+*/
+p {
+  margin: 0.3em 0 0.5em 0;
+  line-height: 1.6em;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+a {
+  color: #d40b6b;
+}
+a:hover {
+  color: #73063a;
+}
+ul {
+  list-style: square outside;
+}
+li {
+  margin-bottom: 0.4em;
+}
+/*doc
+---
+title: Icons
+name: icons
+category: Base CSS
+---
+
+```html_example
 <p><span class="icon">F</span> Facebook</p>
 
 <p>
@@ -419,7 +459,7 @@ h6 {
  <span class="icon">s</span> s<br />
  <span class="icon">t</span> t<br />
 </p>
-````
+```
 */
 .icon {
   font-family: 'Icon';
@@ -427,49 +467,36 @@ h6 {
   font-size: 2rem;
   padding-right: 7px;
 }
-/*
-## Texts and base elements
+/*doc
+---
+title: Highlight
+name: highlight
+category: Base CSS
+---
 
-````
-<p>A simple paragraph with a <a href="#">link</a> in it</p>
-````
-*/
-p {
-  margin: 0.3em 0 0.5em 0;
-  line-height: 1.6em;
-  font-size: 16px;
-  font-size: 1.6rem;
-}
-a {
-  color: #d40b6b;
-}
-a:hover {
-  color: #73063a;
-}
-/*
-## Lists
-
-List element
-````
-<ul>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-</ul>
-````
-*/
-ul {
-  list-style: square outside;
-}
-li {
-  margin-bottom: 0.4em;
-}
-/*
-## Highlight a block
-
-````
+```html_example
 <section class="highlight">Highlighted block</section>
-````
+```
+
+
+Quoting
+```html_example
+<blockquote>
+  <p>I believe in the Golden Rule - The Man with the Gold . . . Rules.</p>
+  <footer>
+    <span class="author">Mr. T</span>
+    from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
+  </footer>
+</blockquote>
+```
+
+Un-highlighted quote
+```html_example
+<blockquote class="unhighlight">
+  <p>I believe in the Golden Rule - The Man with the Gold ... Rules.</p>
+</blockquote>
+```
+
 */
 .highlight {
   background-color: #ccc;
@@ -479,27 +506,6 @@ li {
 .unhighlight {
   background-color: transparent;
 }
-/*
-## Blockquote
-
-Quoting
-````
-<blockquote>
-  <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
-  <footer>
-    <span class="author">Mr. T</span> 
-    from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
-    </footer>
-</blockquote>
-````
-
-Un-highlighted quote
-````
-<blockquote class="unhighlight">
-  <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
-</blockquote>
-````
-*/
 blockquote {
   background-color: rgba(240, 240, 240, 0.8);
   font-family: "CorporateATOT-MediumItalic", Georgia, "Times New Roman", Times, serif;
@@ -520,13 +526,17 @@ blockquote cite {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/*
-## Buttons
+/*doc
+---
+title: Buttons
+name: buttons
+category: Base CSS
+---
 
 A simple button
-````
+```html_example
 <a href="#" class="btn">I'm a simple button</a>
-````
+```
 */
 .btn {
   margin-top: 1em;
@@ -610,12 +620,17 @@ hr.isolated {
     column-gap: 32px;
   }
 }
-/*
-# Sections
+/*doc
+---
+title: Sections
+name: sections
+category: Layout
+---
+Sections
 
-````
+```html_example
 <section class="highlight"></section>
-````
+```
 */
 section {
   margin: 5px 10px;
@@ -629,8 +644,12 @@ section:after {
 section:after {
   clear: both;
 }
-/*
-# Layout
+/*doc
+---
+title: Aside
+name: aside
+category: Layout
+---
 
 ````
 <section class="with-aside">
@@ -696,8 +715,12 @@ section:after {
     max-width: 1140px;
   }
 }
-/*
-# Page content
+/*doc
+---
+title: Page content
+name: page_content
+category: Layout
+---
 
 ````
 <section>

@@ -4,4 +4,3 @@ composer.phar
 antistatique.log
 .DS_Store
 blog/wp-content/uploads/*
-styleguide
