@@ -1,0 +1,96 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}Rodondi-Joye, Étude d'avocats{% endblock %}
+
+{% block body_class %}{{ parent() }} rodondi-joye{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.brouillondeculture.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'brouillondeculture' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.pierreetoile.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'pierreetoile' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/rj-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      Rodondi - Joye
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      L'étude d'avocats Rodondi-Joye a besoin d'une identité et d'un site internet. Spécialistes reconnus dans plusieurs domaines juridiques de pointe, l'image se doit de transmettre leurs valeurs fondamentales.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Par un design sobre et maîtrisé, Antistatique a fait correspondre les valeurs de l'étude dans ses déclinaisons graphiques afin d'inspirer le professionnalisme et l'expérience.
+    </p>
+    <a href="http://www.rodondi-joye.ch" class="btn">Visiter le site Rodondi-Joye</a>
+
+    </div>
+</section>
+
+<section class="isolated">
+  <img src="/assets/img/rj/rj-lawyer.png" class="full-width">
+</section>
+
+<section>
+  <div class="page-content">
+  
+    <img src="/assets/img/rj/rj-logo.png" class="full-width">
+
+    <h2>Le logo</h2>
+    <p>
+      En utilisant uniquement des caractères typographiques pour élaborer le logo, nous avons retranscrit la complémentarité des associés ainsi que l'absence de fioriture par l'emploi d'une police de caractères sobre et géométrique.
+    </p>
+  </div>
+</section>
+
+<section class="isolated">
+  <img src="/assets/img/rj/rj-text.png" class="full-width">
+</section>
+
+<section>
+  <div class="page-content">
+
+
+    <h2>Le site</h2>
+    <p>
+      À l'image de l'identité, le site se doit de refléter les mêmes valeurs. Privilégiant le contenu textuel aux effets visuels superflus, le design s'est concentré sur la hiérarchie de l'information et sur l'optimisation  de la lisibilité sur des supports de lecture différents.
+    </p>
+
+    <p>
+      L'utilisation de grandes photographies vient équilibrer un contenu textuel fourni et offre ainsi un espace d'ouverture sur l'étude.
+    </p>
+
+    <img src="/assets/img/rj/rj-mobile.png" class="full-width">
+
+    <h2>En conclusion</h2>
+    <p>
+      Autant pour le site que dans la création de l'identité, ce mandat s'est inscrit dans le type de réalisations qui nous tiennent à coeur. Sobre, tout en finesse et focalisé sur le contenu, voici un domaine dans lequel l'équipe de designers et de front-end développeurs aime profiter de son expérience.
+    </p>
+
+  </div>
+</section>
+<section class="isolated"></section>
+  {% endblock %}

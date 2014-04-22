@@ -1,4 +1,4 @@
-homepage: 
+homepage:
     title: "Antistatique – Agence web à Lausanne – Suisse – PHP, Symfony, Magento, Mobile, e-Commerce, Web Design, Social Media"
     baseline: Nous sommes des artisans du web, lausannois, curieux et exigeants.
     contact: "Contactez-nous"
@@ -10,12 +10,12 @@ homepage:
         urturn:
             title: Engage urturn
             baseline: Landing page de lancement
-        tennislausanne: 
+        tennislausanne:
             title: Tennis Lausanne
             baseline: Communication globale du Club
         uchitomi:
             title: Uchitomi
-            baseline: Boutique en ligne Magento sur-mesure 
+            baseline: Boutique en ligne Magento sur-mesure
         rdr:
             title: RDR Architectes
             baseline: Développement Symfony
@@ -37,6 +37,15 @@ homepage:
         billetlemillion:
             title: Loterie Romande
             baseline: Billet le Million 2013
+        pierreetoile:
+            title: Pierre Étoile
+            baseline: Modèle de newsletter
+        rodondijoye:
+            title: Rodondi-Joye
+            baseline: Étude d'avocats
+        brouillondeculture:
+            title: Brouillon de Culture
+            baseline: Websérie RTS
 
 
 antistatique:

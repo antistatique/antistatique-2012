@@ -1,0 +1,108 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}Brouillon de Culture - Websérie RTS{% endblock %}
+
+{% block body_class %}{{ parent() }} brouillondeculture{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.rodondijoye.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'rodondijoye' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/bdc-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      RTS - Brouillon de Culture
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      La Radio Télévision Suisse a besoin d'un site pour présenter sa nouvelle websérie : Brouillon de Cutlure. Comprenant dix épisodes, la série doit être présentée sur une seule et même page présentant une expérience de navigation originale. La plateforme doit aussi être parfaitement consultable depuis tous types de supports et y offrir la même originalité.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Après une phase d'exploration du champ des possibles, le choix de la RTS s'est porté sur une navigation et des effets visuels au scroll. Le concept est de construire le décor et d'apporter de la profondeur pendant que l'utilisateur défile dans la page au moyen d'effets parallax.
+    </p>
+    <a href="http://www.rts.ch/bdc" class="btn">Visiter le site Brouillon de Culture</a>
+  
+    <br><br><br><br>
+
+    <p><em><span style="font-size:30px;">“</span>Au cours de ce projet, <b>Antistatique a d’abord fait preuve d’une immense créativité</b>, en capturant parfaitement l’univers original de chacun des dix épisodes de Brouillon de culture et des oeuvres dont cette web-série s&#8217;inspire. <b>Ils ont créé un site web estétiquement très réussi</b>, qui donne ainsi envie au public de découvrir les épisodes et de les partager sur les réseaux sociaux. Au delà de l’aspect visuel, Antistatique a complètement <b>rempli le cahier des charges qui leur a été confié</b>, en développant un site web performant et adapté à tous les types d’écrans.</em></p>
+
+    <p><em>Tout au long du projet, <b>les différents interlocuteurs se sont montrés professionnels et à l’écoute</b>. La collaboration qui s’est naturellement instaurée m’a permis de travailler agréablement et efficacement, et c’est avec grand plaisir que je ferai à nouveau appel à eux à l&#8217;avenir.<span style="font-size:30px;">”</span></em></p>
+
+    <br>
+
+    <p style="text-align:right;"><strong>Mounir Krichane
+    Chef de projet à la Radio Télévision Suisse (RTS)</strong></p>
+  </div>
+</section>
+
+<section class="isolated">
+  <img src="/assets/img/bdc/bdc-amour.png" class="full-width">
+</section>
+
+<section>
+  <div class="page-content">
+    <h2>Un design bricolé</h2>
+    <p>
+      Pour coller avec l'univers visuel de la série, la direction visuelle s'est porté vers un design recréant des matériaux propres au côté très "bricolé" de Brouillon de Culture. S'inspirant de l'ambiance de chaque épisode, nous avons donné une atmosphère personnelle à chaque planche afin de surprendre le visiteur dans sa progression.
+    </p>
+  </div>
+</section>
+
+<section class="isolated">
+  <img src="/assets/img/bdc/bdc-lutte.png" class="full-width">
+</section>
+
+<section>
+  <div class="page-content">
+
+
+    <h2>Des animations parfaitement orchestrées</h2>
+    <p>
+      Utilisant les dernières technologies en terme d'animation au défilement, nous avons déterminé les différentes animations au pixel près. En effet, chaque construction de décors ou effet de profondeur démarre à un stade précis afin de ne pas surcharger le navigateur et d'offrir l'expérience la plus fluide possible.
+    </p>
+
+
+    <h2>Une optimisation de l'extrême</h2>
+    <p>
+      Le design imposant un grand nombre d'images, nous avons optimisé au maximum les performances du site. Tout d'abord par un système de chargement progressif des images, puis par des tests continus sur les différents supports à chaque étape, nous avons réussi à offrir une expérience la plus naturelle permise.
+    </p>
+
+    <img src="/assets/img/bdc/bdc-mobile.png" class="full-width">
+
+    <h2>En conclusion</h2>
+    <p>
+      Le cocktail animation au défilement, images volumineuses et portage mobile a été un challenge de choix que nous avons su relevé non sans heurt face à certaines limitations technologiques. En effet, l'impératif d'avoir des effets parallax sur smartphones nous a contraints à prendre des chemins plus éloignés de notre credo qui privilégie l'accessibilité sur les supports mobiles avant les effets visuels.
+    </p>
+    <p>
+      En définitive, le bilan de cette aventure s'est révélé positif et nous sommes fiers d'avoir pu produire un site innovant et sortant des structures classiques. 
+    </p>
+
+  </div>
+</section>
+<section class="isolated"></section>
+  {% endblock %}
