@@ -1,0 +1,107 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}Billet le Million 2013 - Landing page, présentation de produit, Antistatique{% endblock %}
+
+{% block body_class %}{{ parent() }} billetlemillion{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.courtierspartenaires.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'courtierspartenaires' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/loro-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      Billet le million
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      La Loterie Romande a besoin d'un site internet pour l'édition 2013 de son Billet Le Million. Le but est d'en faire la promotion et de présenter les résultats jour par jour.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Antistatique, en partant du design du billet et de la structure imposée, a proposé une version digitale en apportant des éléments innovant et interactif. L'idée est d'offrir, grâce aux nouvelles technologies, des animations visant à augmenter l'immersion du visiteur.
+    </p>
+    <a href="http://www.billetlemillion.ch/" class="btn">Visiter le site Billet le Million 2013</a>
+  </div>
+</section>
+
+<section class="isolated">
+  <img src="/assets/img/loro/loro-how.png" class="full-width">
+</section>
+
+<section>
+  <div class="page-content">
+    <h2>Les contraintes de départs</h2>
+    <p>
+      Le site a pour but de présenter à la fois le jeu, mais aussi et surtout les résultats. La plateforme se doit d'être facilement consultable depuis tous types de terminaux. Le responsive webdesign est donc une base de travail omniprésente pendant toute la phase de conception et de design.
+    </p>
+    <p>
+      La volonté de garder la structure établie l'année précédente est également un point de départ duquel le processus de disposition du contenu a découlé.
+    </p>
+  </div>
+</section>
+
+<section class="isolated">
+  <img src="/assets/img/loro/loro-home.png" class="full-width">
+</section>
+
+<section>
+  <div class="page-content">
+
+
+    <h2>Un design riche et explosif</h2>
+    <p>
+      En se basant sur cet univers fuchsia et doré, nous avons développé une interface explosive avec un côté clinquant mais assumé. En effet, par l'utilisation de ces pièces flottant dans les airs et d’un coffre plaqué or, l'univers évoqué dans le billet prend une nouvelle dimension en y plongeant entièrement le visiteur.
+    </p>
+
+    <img src="/assets/img/loro/loro-mobile.png" class="full-width">
+
+    <h2>Une version mobile allégée</h2>
+    <p>
+      Conscient que l'accès rapide au contenu est le besoin premier des utilisateurs de smartphones, la version mobile bénéficie d'un allègement des effets. Il n'est pas judicieux d'augmenter inutilement le temps de chargement pour ces terminaux. La création d'une navigation intuitive sur la gauche, ainsi qu'un contenu verticalement linéaire coule de source.
+    </p>
+
+    <h2>Une nouvelle page chaque jour</h2>
+    <p>
+      Chaque jour amenant son lot de résultats, un design flexible s'adapte au nombre variable de ces tirages. Le coffre central est décliné en plusieurs versions pour pouvoir répondre à ce besoin.
+    </p>
+  </div>
+</section>
+<section class="isolated">
+  <img src="/assets/img/loro/loro-teaser.png" class="full-width">
+</section>
+<section>
+  <div class="page-content">
+    <h2>Une intégration optimale</h2>
+    <p>
+      Le mandat s'arrêtant à l'étape d'intégration HTML/CSS, le code est pensé dans une logique de modularité et de facilité de prise en main. Nous aimons et avons de l’expérience dans la transmission de code. Nous documentons notre travail et basons nos développement sur les standards du domaine.
+    </p>
+
+  </div>
+</section>
+<section class="isolated"></section>
+  {% endblock %}

@@ -34,6 +34,9 @@ homepage:
         courtierspartenaires:
             title: Courtiers partenaires
             baseline: Application mobile immobilière
+        billetlemillion:
+            title: Loterie Romande
+            baseline: Billet le Million 2013
 
 
 antistatique:
