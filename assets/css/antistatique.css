@@ -784,7 +784,7 @@ header nav ul li:first-child {
 }
 @media (min-width: 40.5em) {
   header.topbar {
-    position: fixed;
+    position: absolute;
     z-index: 99;
     top: 0;
     left: 0;
@@ -992,7 +992,7 @@ footer a {
 }
 @media (min-width: 40.5em) {
   #connect {
-    /*background: url('../img/logo-a.png') 100% 100% no-repeat; 
+    /*background: url('../img/logo-a.png') 100% 100% no-repeat;
       min-height: 410px;*/
   
   }
