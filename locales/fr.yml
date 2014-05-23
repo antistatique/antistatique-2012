@@ -46,6 +46,9 @@ homepage:
         brouillondeculture:
             title: Brouillon de Culture
             baseline: Websérie RTS
+        cardis:
+            title: Cardis immobilier
+            baseline: Plateforme immobilière
 
 
 antistatique:

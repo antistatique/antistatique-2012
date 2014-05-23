@@ -1,0 +1,157 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}De Rham Immobilier Sotheby's International Realy – Développement Symfony, communication globale, Antistatique{% endblock %}
+
+{% block body_class %}{{ parent() }} derham{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.brouillondeculture.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'brouillondeculture' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/cardis-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      Cardis Immobilier
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      Suite au rachat de la société de Rham Sotheby’s International Realty par Philippe Cardis, ex-CEO du Groupe immobilier de Rham, la marque à besoin d'adapter l'ancien site à la nouvelle identité et à sa principale activité, le courtage immobilier.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Antistatique donne à la marque son identité propre. C'est aussi l'occasion d'oppérer une refonte du moteur de recherche ainsi qu'une meilleure gestion du contenu.
+    </p>
+    <a href="http://www.cardis.ch" class="btn">Visiter le site cardis.ch</a>
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li>
+          <div class="symfony">
+            <span class="icon">S</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Framework Symfony2
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="html dev">
+            <span class="icon">H</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              HTML 5 / CSS 3
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="github dev">
+            <span class="icon">O</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Github
+            </h4>
+          </div>
+        </li>
+
+        <li>
+          <div class="agile">
+            <span class="icon">a</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Méthode agile de gestion de projet
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="responsive">
+            <span class="icon">X</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Responsive Design
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section>
+    <img src="/assets/img/cardis/cardis-brand.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Une nouvelle marque</h2>
+
+      <p>
+        Bien que se basant sur la même ligne graphique que la société à laquelle il succède, Cardis Immobilier Sotheby's International Realty doit avoir sa propre touche qui le différenciera de son prédécesseur. Pour cela, en plus de l'intégration du logo, certains éléments ont été revus pour apporter un design plus personnel à la nouvelle marque. 
+      </p>
+      <p>
+        La page d'accueil ainsi que les différentes pages de contenu ont été repensées pour faciliter la compréhension de la structure et l'accession à l'information désirée. Certaines informations, comme les biens immobiliers et l'actualité, ont été remontées sur la page d'accueil permettant une meilleure entrée vers ces zones.
+      </p>
+
+      <h2>Un nouveau moteur de recherche</h2>
+
+      <p>Afin d'augmenter l'efficacité et la performance de la recherche de biens, un tout nouveau moteur de recherche à facettes a été mis en place. Plutôt que de passer par une définition des critères étape par étape, tous les biens sont proposés par défaut et à l'aide de filtres, il est possible de préciser sa recherche.</p>
+    </div>
+  </section>
+  <section>
+    <img src="/assets/img/cardis/cardis-search.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Un nouveau magazine</h2>
+
+      <p>Lors du rachat, une des demandes a été de pouvoir disposer d'un magazine d'actualité où la société peut rédiger ses news. Pour cela, une administration a été mise en place à l'aide du bundle Sonata Project pour Symfony2 permettant ainsi de pouvoir créer et éditer des articles comme pour un blog traditionnel.</p>
+
+    </div>
+  </section>
+  <section>
+    <img src="/assets/img/cardis/cardis-magazine.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Un site en perpétuelle évolution</h2>
+
+      <p>Conscient des améliorations qui peuvent être apporté à la plateforme, Cardis Immobilier Sotheby's International Realty mandate régulièrement Antistatique afin d'apporter des ajustements à différents niveaux.</p>
+      <p>Disposant de son propre réseau de traducteurs qualifié dans la rédaction de contenu de qualité dans diverses langues étrangères, Antistatique à coeur de contribuer à l'amélioration des textes anglophones de son client.</p>
+    </div>
+  </section>
+  <section class="isolated">
+
+  </section>
+  {% endblock %}
