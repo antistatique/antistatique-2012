@@ -268,7 +268,7 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-/* 
+/*
 # Base styles
 
 ## Responsive titles
@@ -441,10 +441,10 @@ p {
   font-size: 1.6rem;
 }
 a {
-  color: #d40b6b;
+  color: #f1292e;
 }
 a:hover {
-  color: #73063a;
+  color: #a90b0f;
 }
 /*
 ## Lists
@@ -487,7 +487,7 @@ Quoting
 <blockquote>
   <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
   <footer>
-    <span class="author">Mr. T</span> 
+    <span class="author">Mr. T</span>
     from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
     </footer>
 </blockquote>
@@ -534,24 +534,24 @@ A simple button
   text-decoration: none;
   padding: 0.6em 0.8em;
   font-weight: bold;
-  background-color: #d40b6b;
+  background-color: #f1292e;
   color: #ffffff;
-  border: 1px solid #bc0a5f;
+  border: 1px solid #ef1117;
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
-  background-color: #73063a;
-  border: 1px solid #5b052e;
+  background-color: #a90b0f;
+  border: 1px solid #91090d;
   color: #ffffff;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 .btn:active {
-  background-color: #bc0a5f;
-  border: 1px solid #a40853;
+  background-color: #ef1117;
+  border: 1px solid #d90e13;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
@@ -583,7 +583,7 @@ A simple button
 }
 hr {
   border: none;
-  background-color: #d40b6b;
+  background-color: #f1292e;
   height: 1px;
   margin: 40px 0 30px 0;
 }
@@ -751,11 +751,11 @@ section:after {
 }
 /* HEADER AND TOPBAR */
 header.topbar {
-  background-color: #d40b6b;
+  background-color: #f1292e;
   padding: 0.8em 0 0.2em;
 }
 header.topbar a {
-  color: #fbb0d4;
+  color: #fee8e9;
   text-decoration: none;
   font-size: 16px;
   font-size: 1.6rem;
@@ -838,17 +838,17 @@ header nav ul li:first-child {
 }
 @media (min-width: 40.5em) {
   #baseline {
-    background-color: #d40b6b;
+    background-color: #f1292e;
     margin: 70px 0 0;
   }
   #baseline h1 {
     clear: both;
-    color: #eed2da;
+    color: #eecdd5;
     margin: 0 0 20px 0;
     margin-right: 4em;
   }
   #baseline h1 a {
-    color: #eed2da;
+    color: #eecdd5;
   }
   #baseline h1 a:hover {
     color: #ffffff;
@@ -968,24 +968,24 @@ footer a {
   text-decoration: none;
   padding: 0.6em 0.8em;
   font-weight: bold;
-  background-color: #d40b6b;
+  background-color: #f1292e;
   color: #ffffff;
-  border: 1px solid #bc0a5f;
+  border: 1px solid #ef1117;
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 #newsletter .submit:hover {
-  background-color: #73063a;
-  border: 1px solid #5b052e;
+  background-color: #a90b0f;
+  border: 1px solid #91090d;
   color: #ffffff;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 #newsletter .submit:active {
-  background-color: #bc0a5f;
-  border: 1px solid #a40853;
+  background-color: #ef1117;
+  border: 1px solid #d90e13;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
   -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0);
@@ -1072,7 +1072,7 @@ footer a {
   padding-top: 0;
 }
 .works a:hover h3 {
-  color: #d40b6b;
+  color: #f1292e;
 }
 .works a:hover h5 {
   text-decoration: underline;
@@ -1378,7 +1378,7 @@ hr.meta-separation {
     width: 80%;
   }
   .magenta-sep span {
-    background-color: #d40b6b;
+    background-color: #f1292e;
   }
   .aside-border {
     padding-top: 0.4em;
