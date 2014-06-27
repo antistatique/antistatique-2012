@@ -91,9 +91,7 @@ _gaq.push(['_trackPageview']);
     <header class="topbar">
       <section>
       <a class="brand" href="/">
-          <object data='/assets/img/logo-antistatique-w.svg?v=3e83083' style='height:35px; width:175px;' >
-            <img alt="antistatique" src="/assets/img/logo-antistatique.png" width="175" height="35" />
-          </object>
+          <img src="/assets/img/logo-antistatique-w.svg?v=3e83083" onerror="this.onerror=null; this.src='/assets/img/logo-antistatique.png'" alt="alt" />
         </a>
         <?php get_template_part( 'aside', 'navigation' ) ?>
       </section>
