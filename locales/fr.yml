@@ -90,5 +90,5 @@ footer:
     newsletter:
         submit: "S'abonner"
         error: "<strong>Aie !</strong> Une erreur est survenue, merci de vérifier votre adresse email et de réessayer."
-        success: "<strong>Merci !</strong> Nous nous réjouissons de vous avoir parmis nos lecteurs."
+        success: "<strong>Merci !</strong> Nous nous réjouissons de vous avoir parmi nos lecteurs."
         text: "Pour recevoir l'essentiel de notre actualité, une fois par mois maximum, promis."
