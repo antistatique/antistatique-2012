@@ -1,0 +1,144 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}De Rham Immobilier Sotheby's International Realy – Développement Symfony, communication globale, Antistatique{% endblock %}
+
+{% block body_class %}{{ parent() }} derham{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.prateo.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'prateo' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.cardis.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'cardis' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/besson-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+        Besson Sécurité
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      En étendant son champ d'activité dans le domaine de la sécurité, la quincaillerie Besson a besoin d'un site afin d'y présenter ses nouveaux services.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      En partant du design de quincaillerie.ch, Antistatique a opéré une mise à jour de la ligne graphique afin de faire correspondre l'identité actuelle avec le monde de la sécurité.
+    </p>
+    {#<a href="http://www.cardis.ch" class="btn">Visiter le site cardis.ch</a>#}
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li>
+          <div class="wordpress">
+            <span class="icon">W</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Wordpress
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="html dev">
+            <span class="icon">H</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              HTML 5 / CSS 3
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="bitbucket dev">
+            <span class="icon">b</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Bitbucket
+            </h4>
+          </div>
+        </li>
+
+        <li>
+          <div class="agile">
+            <span class="icon">U</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Approche centrée utilisateur
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="responsive">
+            <span class="icon">X</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Responsive Design
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section>
+    <div class="page-content">
+
+      <h2>Un rafraîchissement visuel</h2>
+
+      <p>
+        La quincaillerie Besson n'ayant pas à rougir des effets du temps sur son design, il s'agissait néanmoins de faire correspondre cette identité avec sa nouvelle activité. Les changements se sont opérés à plusieurs niveaux. Tout d'abord, les polices de caractères ont été revues afin de donner une image plus rassurante au client potentiel. Ensuite, la structure a gagné en modernité et en sobriété. Pour finir, l'ergonomie et la navigation entre les contenus ont été repensées afin de permettre une visite plus libre.
+      </p>
+    </div>
+  </section>
+  <section>
+    <img src="/assets/img/besson/besson-homepage.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Créer de la proximité</h2>
+
+      <p>Plutôt que de faire poser les différents collaborateurs ou d'utiliser des photographies issues de banques d'images, Antistatique a eu l'idée présenter les outils de l'entreprise. Cette imagerie a pour but de rapprocher le visiteur au coeur de l'activité et de rassurer sur son professionnalisme.</p>
+
+    </div>
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Un Wordpress sur mesure</h2>
+
+      <p>Correspondant exactement aux besoins du projet, Wordpress s'est imposé tout naturellement. Afin d'améliorer la gestion des contenus et de faciliter l'ajout de nouvelles réalisations, Antistatique a utilisé le module Advanced Custom Fields. Avec cette technologie et la création de types de posts personnalisés, il a été possible de créer simplement des relations entre les réalisations, les services et les clients et ainsi permettre la navigation décrite plus haut.</p>
+      <p>Disposant d'une grande expertise avec Wordpress, Antistatique est ravi de proposer cette solution dans les projets qui s'y prêtent.</p>
+    </div>
+  </section>
+  <section class="isolated">
+
+  </section>
+  {% endblock %}

@@ -1,0 +1,161 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}De Rham Immobilier Sotheby's International Realy – Développement Symfony, communication globale, Antistatique{% endblock %}
+
+{% block body_class %}{{ parent() }} derham{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.besson.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'besson' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/prateo-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      Prateo
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      Prateo, fiduciaire lausannoise, a besoin de moderniser son image au travers d'une nouvelle identité, ainsi que d'un nouveau site internet.
+    </p>
+    <aside>
+      <h3>
+        Solution
+      </h3>
+    </aside>
+    <p>
+      Antistatique a dessiné un logo correspondant aux valeurs de la société et réalisé un site internet répondant aux besoins du projet.
+    </p>
+    <a href="http://www.prateo.ch" class="btn">Visiter le site prateo.ch</a>
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li>
+          <div class="branding dev">
+            <span class="icon">r</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Branding
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="agile">
+            <span class="icon">U</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Approche centrée utilisateur
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="wordpress">
+            <span class="icon">W</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Wordpress
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="html dev">
+            <span class="icon">H</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              HTML 5 / CSS 3
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="responsive">
+            <span class="icon">X</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Responsive Design
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section>
+    <img src="/assets/img/prateo/prateo-logo.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Une nouvelle identité</h2>
+
+      <p>
+        L'élaboration de la nouvelle identité s'est faite dans le respect des principales valeurs de Prateo, soit: la technicité, l'approche pragmatique et une grande expérience du domaine. En utilisant une police de caractère sans empattement tout en sobriété, le visuel tend à refléter la nature de la société. L'idée est aussi d'intégrer les services de la fiduciaire directement dans la baseline du logo afin de rapidement renseigner sur ses activités.
+      </p>
+    </div>
+  </section>
+  <section>
+    <img src="/assets/img/prateo/prateo-home.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Une nouvelle présence web</h2>
+
+      <p>Dans le même mouvement, le site internet a également subi un lifting complet. Afin de correspondre à la nouvelle identité de Prateo, il s'agit de réaliser un design à la fois sobre, moderne et tout en finesse. C'est dans ce sens que le choix d'une composition très aérée s'est fait, ceci afin d'alléger le visuel et de permettre une meilleure lecture des contenus.</p>
+
+      <h2>Un site plus performant</h2>
+
+      <p>...et pas seulement en surface, le backend du site a également été revu. Construit avec un Wordpress ajusté pour les besoins du client, le site se veut facile à administrer et plus performant. En effet, une gestion avancée des différents types de contenu permet d'ajouter et d'éditer simplement les différentes pages, les services et les collaborateurs.</p>
+
+    </div>
+  </section>
+  <section>
+    <img src="/assets/img/prateo/prateo-mobile.png" class="full-width">
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Une nouvelle imagerie</h2>
+
+      <p>Afin de répondre aux exigences esthétiques mises en place par le design du site, il s'agit d'illustrer les différents collaborateurs de façon cohérente. Des images sobres et travaillées ont été réalisées en collaboration avec la photographe <a href="http://sophiebrasey.ch/">Sophie Brasey</a>. Une grande place leur est attribuée dans le site afin d'équilibrer les contenus textuels.</p>
+      <p>Disposant de son propre réseau de traducteurs qualifiés dans la rédaction de contenu de qualité dans diverses langues étrangères, Antistatique à coeur de contribuer à l'amélioration des textes anglophones de son client.</p>
+    </div>
+  </section>
+   <section>
+    <img src="/assets/img/prateo/prateo-collaborateurs.png" class="full-width">
+  </section>
+    <section>
+    <div class="page-content">
+      <p>Grâce à ses partenaires, Antistatique est fier de proposer des services complémentaires aux siens. Ceci dans le but d'offrir des réalisations cohérentes et de grande qualité.</p>
+    </div>
+  </section>
+  <section class="isolated">
+
+  </section>
+  {% endblock %}

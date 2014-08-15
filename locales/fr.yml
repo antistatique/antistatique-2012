@@ -42,13 +42,19 @@ homepage:
             baseline: Modèle de newsletter
         rodondijoye:
             title: Rodondi-Joye
-            baseline: Étude d'avocats
+            baseline: Rebranding complet et site de présentation
         brouillondeculture:
             title: Brouillon de Culture
             baseline: Websérie RTS
         cardis:
             title: Cardis immobilier
             baseline: Plateforme immobilière
+        besson:
+            title: Besson Sécurité
+            baseline: Wordpress personnalisé
+        prateo:
+            title: Prateo
+            baseline: Rebranding complet et Wordpress personnalisé
 
 
 antistatique:

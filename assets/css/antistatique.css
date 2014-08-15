@@ -993,8 +993,7 @@ footer a {
 @media (min-width: 40.5em) {
   #connect {
     /*background: url('../img/logo-a.png') 100% 100% no-repeat;
-      min-height: 410px;*/
-  
+    min-height: 410px;*/
   }
   #tweet blockquote {
     font-size: 24px;
@@ -1122,6 +1121,12 @@ footer a {
 .works #cardis {
   background-image: url(../img/portfolio-cardis.jpg);
 }
+.works #besson {
+  background-image: url(../img/portfolio-besson.jpg);
+}
+.works #prateo {
+  background-image: url(../img/portfolio-prateo.jpg);
+}
 /*
 # icons
 
@@ -1194,9 +1199,6 @@ footer a {
 #uchitomi:after {
   clear: both;
 }
-@media (min-width: 40.5em) {
-  
-}
 #team {
   *zoom: 1;
 }
@@ -1226,7 +1228,6 @@ footer a {
 }
 .member:hover {
   /*        color: @magenta;*/
-
 }
 .member h4 {
   margin-top: 0.3em;
