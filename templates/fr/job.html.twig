@@ -25,10 +25,10 @@
         <p>Nous sommes ravis de recevoir votre candidature pour les postes suivants. Les candidatures spontanées sont également appréciées. Faites preuve d'enthousiasme et un soupçon de culture web.</p>
         <ul>
             <li>
-                <h3><del>Digital project manager</del></h3>
+                <h3><a href="{{ path('job_show', { slug: 'web-developer', _locale: 'fr' }) }}">Web Developer (Backend / Symfony 2)</a></h3>
             </li>
             <li>
-                <h3><a href="{{ path('job_show', { slug: 'web-developer', _locale: 'fr' }) }}">Web Developer</a></h3>
+                <h3><a href="{{ path('job_show', { slug: 'web-developer-drupal' }) }}">Web Developer (Drupal)</a></h3>
             </li>
             <li>
                 <h3><del>Visual Designer</del></h3>
@@ -36,7 +36,7 @@
         </ul>
 
         <h2>Pour rejoindre l'équipe !</h2>
-        <p>Envoyez-nous votre CV, username Dribble ou github et autres informations passionnantes à <a href="mailto:job@antistatique.net">job@antistatique.net</a>. Les dossiers envoyés par poste ne seront pas traités.</p>
+        <p>Envoyez-nous votre CV, username Dribble ou Github et autres informations passionnantes à <a href="mailto:job@antistatique.net">job@antistatique.net</a>. Les dossiers envoyés par poste ne seront pas traités.</p>
     </div>
 </section>
 {% endblock %}
