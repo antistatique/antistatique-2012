@@ -1,39 +1,43 @@
 {% extends "layout.html.twig" %}
 
-{% block title %}{{ 'job.title' | trans }} - Web Developer (70% - 100%){% endblock %}
+{% block title %}{{ 'job.title' | trans }} - Drupal Developer (70% - 100%){% endblock %}
 
-{% block meta_description%}Job de développeur web à Lausanne, Suisse. Dans une chouette agence.{% endblock %}
-{% block head_scripts %}
+{% block meta_description%}Drupal developer in a web Agency called Antistatique, Lausanne, Switzerland{% endblock %}
+{# {% block head_scripts %}
     <script src="//platform.linkedin.com/in.js" type="text/javascript">
         api_key: lj5b50hfde72
     </script>
-{% endblock %}
+    {% endblock %} #}
 
 
-{% block body_class %}job{% endblock %}
+    {% block body_class %}job{% endblock %}
 
-{% block baseline %}
-<div class="baseline-space"></div>
-<div class="page-title title-image">
+    {% block baseline %}
+    <div class="baseline-space"></div>
+    <div class="page-title title-image">
+        <section>
+            <h1 class="title-separation magenta-sep">
+                <span></span>
+                Drupal Developer (full-time or part-time)
+            </h1>
+        </section>
+    </div>
+    {% endblock %}
+
+    {% block content %}
     <section>
-        <h1 class="title-separation magenta-sep">
-            <span></span>
-            Web Developer php/Symfony (full-time or part-time)
-        </h1>
-    </section>
-</div>
-{% endblock %}
+        <div class="page-content">
+            {# <h2>Nous avons trouvé la perle rare, le poste n'est plus à pourvoir. Merci à tous !</h2> #}
+            <h2>We are looking for a Drupal developer to join our team</h2>
 
-{% block content %}
-<section>
-    <div class="page-content">
-        <h2>We are looking for a Symfony developer to join our team </h2>
+        <p><a href="{{ path('job_show', { slug: 'web-developer-drupal', _locale: 'fr' }) }}">Voir l'annonce en français</a></p>
 
         <h3>What we are offering</h3>
         <ul>
             <li>Varied and innovative projects</li>
             <li>Time for working on Open Source projects</li>
             <li>A budget for attending conferences</li>
+            <li>A personal laptop</li>
             <li>5 weeks of holidays</li>
             <li>A great café, Redbull and fruits</li>
             <li>A table-tennis table for playing with colleagues</li>
@@ -41,32 +45,38 @@
         </ul>
 
         <h3>Main Responsibilities</h3>
-        <h4>Web development</h4>
+        <h4>Drupal expert</h4>
         <ul>
-            <li>PHP 5 development using the Symfony 2 framework</li>
-            <li>Javascript development (Angular.JS, node.js, jQuery)</li>
-            <li>Working with the integration team (HTML, SASS, CSS, JS)</li>
+            <li>PHP and Drupal 7/8 development</li>
+            <li>Support for our theming team (<a href="{{ path('team') }}">Our frontend experts</a>)</li>
+            <li>Javascript development (AngularJS, jQuery)</li>
         </ul>
 
         <h3>Qualifications and skills</h3>
         <ul>
-            <li>Undergraduate university degree or equivalent higher education qualification</li>
-            <li>Minimum two years of web development experience</li>
+            <li>Minimum two years of Drupal development experience</li>
+            <li>Active member of Drupal.org community</li>
             <li>In-depth knowledge of new web technologies</li>
             <li>In-depth knowledge of HTTP and REST</li>
-            <li>Knowledge of Symfony 2 framework</li>
-            <li>Extensive knowledge of Javascript</li>
             <li>Good knowledge of databases</li>
-            <li>Knowledge of Elasticsearch, RabbitMQ or Redis whould be an advantage</li>
+            <li>Knowledge of Elasticsearch and Solr whould be an advantage</li>
             <li>Good level of French and English</li>
             <li>Knowledge of German would be an advantage</li>
             <li>Familiarity working with version control tools (git / subversion)</li>
             <li>Command line proficiency with Linux/*nix system</li>
         </ul>
 
-        <h3>Requirements and personal skills</h3>
+
+        <h3>You're the one if ...</h3>
         <ul>
-            <li>Github account holder (mention it in your application)</li>
+            <li>Features module is used in your Drupal projects</li>
+            <li>Drush is your best friend</li>
+            <li>Drupal API (entity API, views API) is part of your daily life</li>
+        </ul>
+
+      <h3>Requirements and personal skills</h3>
+        <ul>
+            <li>Github account holder and Drupal.org user (mention it in your application)</li>
             <li>Curious by nature and attentive to the needs of users</li>
         </ul>
 
@@ -95,10 +105,10 @@
                data-email="job@antistatique.net"
                data-jobId="WEBDEV-2"
             ></script>
-#}
-        <p><a href="mailto:job@antistatique.net?subject=subject=I am a developer, hire me">job@antistatique.net</a>.
-        </p>
-        <p>Applications received by post will be destroyed.</p>
-    </div>
-</section>
-{% endblock %}
+            #}
+            <p><a href="mailto:job@antistatique.net?subject=Je%20suis%20un%20d%C3%A9veloppeur%20Drupal%2C%20engagez-moi">job@antistatique.net</a> with your Github accounr and Drupal.org profile.
+            </p>
+            <p>Applications received by post will be destroyed.</p>
+        </div>
+    </section>
+    {% endblock %}
