@@ -1,0 +1,159 @@
+{% extends "fr/portfolio/base.html.twig" %}
+
+{% block title %}devenez.ch - Campagne de communication{% endblock %}
+
+{% block body_class %}{{ parent() }} devenez{% endblock %}
+
+
+{% block previous_work %}{{ 'homepage.work.tennislausanne.title' | trans }}{% endblock %}
+{% block previous_link %}{{ path('portfolio_show', { slug: 'tennislausanne' }) }}{% endblock %}
+{% block next_work %}{{ 'homepage.work.cardis.title' | trans }}{% endblock %}
+{% block next_link %}{{ path('portfolio_show', { slug: 'cardis' }) }}{% endblock %}
+
+{% block baseline %}
+<div class="baseline-space"></div>
+
+{{ parent() }}
+
+<div class="page-title title-image" style="background-image: url('/assets/img/devenez-title.jpg')">
+  <section>
+    <h1 class="magenta-sep">
+      <span></span>
+      devenez.ch
+    </h1>
+  </section>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<section>
+  <div class="page-content isolated">
+    <aside>
+      <h3>
+        Brief
+      </h3>
+    </aside>
+    <p>
+      L’Etat de Genève décide de réaliser en 2014 une campagne de recrutement commune pour les métiers de la sécurité. Cette campagne fédératrice rassemble la Police de Genève ainsi que l’Office Cantonal de la Détention. 
+    </p>
+    <a href="http://www.devenez.ch" class="btn">Visiter le site devenez.ch</a>
+  </div>
+</section>
+
+<div class="highlight">
+  <section>
+    <div class="page-content">
+      <h3>
+        Un aperçu des techniques utilisées :
+      </h3>
+    </div>
+    <div class="icons">
+      <ul class="row">
+        <li>
+          <div class="branding dev">
+            <span class="icon">r</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Branding
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="html dev">
+            <span class="icon">F</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Stratégie réseaux<br>sociaux
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="agile">
+            <span class="icon">U</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Approche centrée utilisateur
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="wordpress">
+            <span class="icon">d</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Drupal
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="responsive">
+            <span class="icon">X</span>
+            <h4 class="title-separation long-sep">
+              <span></span>
+              Responsive Design
+            </h4>
+          </div>
+        </li>
+      </ul>
+    </div></section>
+  </div>
+  <section>
+    <div class="page-content">
+
+      <h2>Une nouvelle identité</h2>
+
+      <p>
+        Afin de rassembler ces divers corps de métiers jusque là promus séparément, Antistatique trouve un concept efficace: devenez.
+      </p>
+      <p>
+        Antistatique décide de partir sur une imagerie mettant en scène une personnes civile aspirante  aux côtés d’une personne uniformée. 
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Un objectif</h2>
+
+      <p>L’objectif principal de la campagne était de briser la glace sur l’accès à ces métiers, souvent méconnus ou considérés comme inaccessibles. </p>
+
+      <p>Le fil rouge de la campagne résidait dans cette idée: montrer que toute personne, homme ou femme, étudiant ou expérimentés, pouvait prétendre à l’un de ces postes</p>
+
+    </div>
+  </section>
+  <section>
+    <div class="page-content">
+
+      <h2>Plusieurs plateformes de communication</h2>
+
+      <p>Antistatique décline l’imagerie sur plusieurs plateformes et sort de son domaine de prédilection qu’est le web et se prêtant au jeu du print, de l’évènementiel et de l’achat média.</p>
+      <p>Merci à <a href="http://sophiebrasey.ch/">Sophie Brasey</a> pour son travail photographique de qualité. </p>
+
+      <br>
+      
+      <h2>Facebook ads</h2>
+      <p>
+        <img src="/assets/img/devenez/image04.png" class="full-width">
+      </p>
+      <p>
+        <img src="/assets/img/devenez/image00.png" class="full-width">
+      </p>
+      <h2>LinkedIn Ads </h2>
+      <p>
+        <img src="/assets/img/devenez/image01.png" class="full-width">
+      </p>
+      <h2>Google ads </h2>
+      <p>
+        <img src="/assets/img/devenez/image02.png" class="full-width">
+      </p>
+      <h2>AdWords Video</h2>
+      <p>
+        <img src="/assets/img/devenez/image03.png" class="full-width">
+      </p>
+    </div>
+  </section>
+  <section class="isolated">
+
+  </section>
+  {% endblock %}

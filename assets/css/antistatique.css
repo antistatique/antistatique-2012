@@ -1127,6 +1127,9 @@ footer a {
 .works #prateo {
   background-image: url(../img/portfolio-prateo.jpg);
 }
+.works #devenez {
+  background-image: url(../img/portfolio-devenez.jpg);
+}
 /*
 # icons
 
@@ -1396,4 +1399,3 @@ hr.meta-separation {
     background-position: 10% 0;
   }
 }
-/* Based on http://csswizardry.com/2013/04/shame-css/ */

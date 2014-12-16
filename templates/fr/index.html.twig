@@ -23,6 +23,15 @@
             {{ 'homepage.work.title' | trans }}
         </h3>
         <div class="works">
+            <a id="devenez" href="{{ path('portfolio_show', { slug: 'devenez' }) }}">
+                <hgroup>
+                    <h3>{{ 'homepage.work.devenez.title' | trans }}</h3>
+                    <h5 class="title-separation x-long-sep magenta-sep">
+                        <span></span>
+                        {{ 'homepage.work.devenez.baseline' | trans }}
+                    </h5>
+                </hgroup>
+            </a>
             <a id="prateo" href="{{ path('portfolio_show', { slug: 'prateo' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.prateo.title' | trans }}</h3>
@@ -32,21 +41,12 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="cardis" href="{{ path('portfolio_show', { slug: 'cardis' }) }}">
+            <a id="cardis" href="{{ path('portfolio_show', { slug: 'cardis' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.cardis.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
                         <span></span>
                         {{ 'homepage.work.cardis.baseline' | trans }}
-                    </h5>
-                </hgroup>
-            </a>
-            <a id="brouillondeculture" href="{{ path('portfolio_show', { slug: 'brouillondeculture' }) }}" class="last">
-                <hgroup>
-                    <h3>{{ 'homepage.work.brouillondeculture.title' | trans }}</h3>
-                    <h5 class="title-separation x-long-sep magenta-sep">
-                        <span></span>
-                        {{ 'homepage.work.brouillondeculture.baseline' | trans }}
                     </h5>
                 </hgroup>
             </a>

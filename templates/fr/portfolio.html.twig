@@ -24,6 +24,15 @@
             {{ 'homepage.work.title' | trans }}
         </h3>
         <div class="works">
+            <a id="devenez" href="{{ path('portfolio_show', { slug: 'devenez' }) }}">
+                <hgroup>
+                    <h3>{{ 'homepage.work.devenez.title' | trans }}</h3>
+                    <h5 class="title-separation x-long-sep magenta-sep">
+                        <span></span>
+                        {{ 'homepage.work.devenez.baseline' | trans }}
+                    </h5>
+                </hgroup>
+            </a>
             <a id="prateo" href="{{ path('portfolio_show', { slug: 'prateo' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.prateo.title' | trans }}</h3>
@@ -33,7 +42,7 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="cardis" href="{{ path('portfolio_show', { slug: 'cardis' }) }}">
+            <a id="cardis" href="{{ path('portfolio_show', { slug: 'cardis' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.cardis.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -42,7 +51,9 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="brouillondeculture" href="{{ path('portfolio_show', { slug: 'brouillondeculture' }) }}" class="last">
+        </div>
+        <div class="works">
+            <a id="brouillondeculture" href="{{ path('portfolio_show', { slug: 'brouillondeculture' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.brouillondeculture.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -51,8 +62,6 @@
                     </h5>
                 </hgroup>
             </a>
-        </div>
-        <div class="works">
             <a id="rodondijoye" href="{{ path('portfolio_show', { slug: 'rodondijoye' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.rodondijoye.title' | trans }}</h3>
@@ -62,7 +71,7 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="pierreetoile" href="{{ path('portfolio_show', { slug: 'pierreetoile' }) }}">
+            <a id="pierreetoile" href="{{ path('portfolio_show', { slug: 'pierreetoile' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.pierreetoile.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -71,7 +80,9 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="billetlemillion" href="{{ path('portfolio_show', { slug: 'billetlemillion' }) }}" class="last">
+        </div>
+        <div class="works">
+            <a id="billetlemillion" href="{{ path('portfolio_show', { slug: 'billetlemillion' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.billetlemillion.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -80,8 +91,6 @@
                     </h5>
                 </hgroup>
             </a>
-        </div>
-        <div class="works">
             <a id="courtierspartenaires" href="{{ path('portfolio_show', { slug: 'courtierspartenaires' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.courtierspartenaires.title' | trans }}</h3>
@@ -91,7 +100,7 @@
                     </h5>
                 </hgroup>
             </a>            
-            <a id="ehl" href="{{ path('portfolio_show', { slug: 'ehl' }) }}">
+            <a id="ehl" href="{{ path('portfolio_show', { slug: 'ehl' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.ehl.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -100,7 +109,9 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="electrosanne" href="{{ path('portfolio_show', { slug: 'electrosanne' }) }}" class="last">
+        </div>
+        <div class="works">
+            <a id="electrosanne" href="{{ path('portfolio_show', { slug: 'electrosanne' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.electrosanne.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -109,8 +120,6 @@
                     </h5>
                 </hgroup>
             </a>
-        </div>
-        <div class="works">
             <a id="faceit" href="{{ path('portfolio_show', { slug: 'faceit' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.faceit.title' | trans }}</h3>
@@ -120,7 +129,7 @@
                     </h5>
                 </hgroup>
             </a>            
-            <a id="urturn" href="{{ path('portfolio_show', { slug: 'urturn' }) }}">
+            <a id="urturn" href="{{ path('portfolio_show', { slug: 'urturn' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.urturn.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -129,7 +138,9 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="tennislausanne" href="{{ path('portfolio_show', { slug: 'tennislausanne' }) }}" class="last">
+        </div>
+        <div class="works">
+            <a id="tennislausanne" href="{{ path('portfolio_show', { slug: 'tennislausanne' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.tennislausanne.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -138,8 +149,6 @@
                     </h5>
                 </hgroup>
             </a>
-        </div>
-        <div class="works">
             <a id="derham" href="{{ path('portfolio_show', { slug: 'derham' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.derham.title' | trans }}</h3>
@@ -149,16 +158,18 @@
                     </h5>
                 </hgroup>
             </a>
-            <a id="uchitomi" href="{{ path('portfolio_show', { slug: 'uchitomi' }) }}">
+            <a id="uchitomi" href="{{ path('portfolio_show', { slug: 'uchitomi' }) }}" class="last">
                 <hgroup>
                     <h3>{{ 'homepage.work.uchitomi.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
                         <span></span>
                         {{ 'homepage.work.uchitomi.baseline' | trans }}
                     </h5>
-                </hgroup class="last">
+                </hgroup>
             </a>
-            <a id="rdr" href="{{ path('portfolio_show', { slug: 'richter' }) }}" class="last">
+        </div>
+        <div class="works">
+            <a id="rdr" href="{{ path('portfolio_show', { slug: 'richter' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.rdr.title' | trans }}</h3>
                     <h5 class="title-separation x-long-sep magenta-sep">
@@ -167,8 +178,6 @@
                     </h5>
                 </hgroup>
             </a>
-        </div>
-        <div class="works">
             <a id="tw" href="{{ path('portfolio_show', { slug: 'tehran' }) }}">
                 <hgroup>
                     <h3>{{ 'homepage.work.tehran.title' | trans }}</h3>
