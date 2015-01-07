@@ -58,7 +58,8 @@
      */
     wp_head();
 ?>
-
+<script src="//use.typekit.net/lfl3jyz.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 <script type="text/javascript">
 
 var _gaq = _gaq || [];

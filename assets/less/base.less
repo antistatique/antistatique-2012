@@ -35,8 +35,9 @@
     font-style: normal;
 }
 
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       "CorporateATOT-MediumItalic", Georgia, "Times New Roman", Times, serif;
+@newFont:               "ff-dagny-web-pro",sans-serif;
+@sansFontFamily:        @newFont;
+@serifFontFamily:       @newFont;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 @icon:                  'Icon';
 
@@ -68,11 +69,16 @@ body{
   margin: 0;
   padding: 0;
   font: 14px @sansFontFamily;
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -ms-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: @serifFontFamily; 
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
   line-height: 1.2em;
 }
@@ -165,7 +171,7 @@ h3, h2, h3, h4, h5, h6{
 p{
   margin: 0.3em 0 0.5em 0;
   line-height: 1.6em;
-  .font-size(16);
+  font-size: 20px;
 }
 a{
   color: @linkColor;

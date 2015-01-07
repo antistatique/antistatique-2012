@@ -290,7 +290,12 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px "ff-dagny-web-pro", sans-serif;
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -ms-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
 }
 h1,
 h2,
@@ -298,8 +303,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "CorporateATOT-MediumItalic", Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-style: normal;
   font-weight: normal;
   line-height: 1.2em;
 }
@@ -437,8 +442,7 @@ h6 {
 p {
   margin: 0.3em 0 0.5em 0;
   line-height: 1.6em;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 20px;
 }
 a {
   color: #d40b6b;
@@ -502,7 +506,7 @@ Un-highlighted quote
 */
 blockquote {
   background-color: rgba(240, 240, 240, 0.8);
-  font-family: "CorporateATOT-MediumItalic", Georgia, "Times New Roman", Times, serif;
+  font-family: "ff-dagny-web-pro", sans-serif;
   color: #666666;
   padding: 1.3em 1.8em;
   margin: 2em 0;
@@ -516,7 +520,7 @@ blockquote p {
 }
 blockquote footer,
 blockquote cite {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "ff-dagny-web-pro", sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
 }
@@ -828,8 +832,8 @@ header nav ul li:first-child {
   display: block;
   padding-bottom: 0.8em;
   border-bottom: 1px solid #cccccc;
-  font-family: "CorporateATOT-MediumItalic", Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
 }
@@ -945,7 +949,7 @@ footer a {
   font-size: 16px;
   font-size: 1.6rem;
   color: #bdbdbd;
-  font-family: "CorporateATOT-MediumItalic", Georgia, "Times New Roman", Times, serif;
+  font-family: "ff-dagny-web-pro", sans-serif;
   text-decoration: none;
 }
 .page-navigation a:hover {
