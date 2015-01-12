@@ -46,7 +46,7 @@
 @bigBreakPoint:         1200px;
 
 
-/* 
+/*
 # Base styles
 
 ## Responsive titles
@@ -68,7 +68,7 @@ body{
   background-color: @bgColor;
   margin: 0;
   padding: 0;
-  font: 14px @sansFontFamily;
+  font: 18px @sansFontFamily;
   font-variant-numeric: oldstyle-nums;
   -moz-font-feature-settings: "onum";
   -ms-font-feature-settings: "onum";
@@ -77,13 +77,16 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: @serifFontFamily; 
+  font-family: @serifFontFamily;
   font-style: normal;
   font-weight: normal;
   line-height: 1.2em;
 }
+h5{
+  font-weight: bold;
+}
 h1{ .font-size(32); }
-h2{ .font-size(26); }
+h2{ .font-size(24); }
 h3{ .font-size(20); }
 h4{ .font-size(16); }
 h5{ .font-size(14); }
@@ -93,18 +96,18 @@ h3, h2, h3, h4, h5, h6{
 }
 
 @media (min-width: @tabletBreakPoint){
-  h1{ .font-size(36); }
-  h2{ .font-size(28); }
-  h3{ .font-size(24); }
-  h4{ .font-size(14); }
-  h5{ .font-size(14); }
-}
-@media (min-width: @bigBreakPoint){
   h1{ .font-size(42); }
   h2{ .font-size(32); }
-  h3{ .font-size(24); }
-  h4{ .font-size(16); }
-  h5{ .font-size(14); }
+  h3{ .font-size(26); }
+  h4{ .font-size(20); }
+  h5{ .font-size(16); }
+}
+@media (min-width: @bigBreakPoint){
+  h1{ .font-size(54); }
+  h2{ .font-size(40); }
+  h3{ .font-size(32); }
+  h4{ .font-size(24); }
+  h5{ .font-size(18); }
 }
 
 /*
@@ -171,7 +174,6 @@ h3, h2, h3, h4, h5, h6{
 p{
   margin: 0.3em 0 0.5em 0;
   line-height: 1.6em;
-  font-size: 20px;
 }
 a{
   color: @linkColor;
@@ -223,7 +225,7 @@ Quoting
 <blockquote>
   <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
   <footer>
-    <span class="author">Mr. T</span> 
+    <span class="author">Mr. T</span>
     from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
     </footer>
 </blockquote>
@@ -238,7 +240,7 @@ Un-highlighted quote
 */
 blockquote{
   background-color: rgba(240, 240, 240, 0.8);
-  font-family: @serifFontFamily; 
+  font-family: @serifFontFamily;
   color: @black40;
   padding: 1.3em 1.8em;
   margin: 2em 0;

@@ -268,7 +268,7 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-/* 
+/*
 # Base styles
 
 ## Responsive titles
@@ -290,7 +290,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  font: 14px "ff-dagny-web-pro", sans-serif;
+  font: 18px "ff-dagny-web-pro", sans-serif;
   font-variant-numeric: oldstyle-nums;
   -moz-font-feature-settings: "onum";
   -ms-font-feature-settings: "onum";
@@ -308,13 +308,16 @@ h6 {
   font-weight: normal;
   line-height: 1.2em;
 }
+h5 {
+  font-weight: bold;
+}
 h1 {
   font-size: 32px;
   font-size: 3.2rem;
 }
 h2 {
-  font-size: 26px;
-  font-size: 2.6rem;
+  font-size: 24px;
+  font-size: 2.4rem;
 }
 h3 {
   font-size: 20px;
@@ -339,28 +342,6 @@ h6 {
 }
 @media (min-width: 40.5em) {
   h1 {
-    font-size: 36px;
-    font-size: 3.6rem;
-  }
-  h2 {
-    font-size: 28px;
-    font-size: 2.8rem;
-  }
-  h3 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
-  h4 {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-  h5 {
-    font-size: 14px;
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1200px) {
-  h1 {
     font-size: 42px;
     font-size: 4.2rem;
   }
@@ -369,16 +350,38 @@ h6 {
     font-size: 3.2rem;
   }
   h3 {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 26px;
+    font-size: 2.6rem;
   }
   h4 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  h5 {
     font-size: 16px;
     font-size: 1.6rem;
   }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 54px;
+    font-size: 5.4rem;
+  }
+  h2 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
   h5 {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 /*
@@ -442,7 +445,6 @@ h6 {
 p {
   margin: 0.3em 0 0.5em 0;
   line-height: 1.6em;
-  font-size: 20px;
 }
 a {
   color: #d40b6b;
@@ -491,7 +493,7 @@ Quoting
 <blockquote>
   <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
   <footer>
-    <span class="author">Mr. T</span> 
+    <span class="author">Mr. T</span>
     from <cite>http://blog.neilpie.co.uk/web-dev/html5-quote-attribution</cite>
     </footer>
 </blockquote>
