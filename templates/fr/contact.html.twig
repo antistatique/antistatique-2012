@@ -31,12 +31,20 @@
                     <a href="mailto:hello@antistatique.net">hello@antistatique.net</a>
                 </p>
                 <p>
-                    Antistatique<br/>
-                    Rue de Sébeillon 9b<br/>
-                    1004 Lausanne
-                </p>
-                <p>
                     <a href="{{ app.request.basepath }}/assets/Antistatique.vcf">Télécharger notre vCard</a>
+                </p>
+                <h4>Lausanne</h4>
+                <p>
+                    Antistatique<br/>
+                    <a href="http://goo.gl/maps/FpdPw">Rue de Sébeillon 9b<br/>
+                    1004 Lausanne</a>
+                </p>
+                <h4>Genève</h4>
+                <p>
+                    Antistatique<br/>
+                    Impact Hub Geneva<br/>
+                    <a href="https://goo.gl/maps/vheZI">1 rue Fendt<br/>
+                    1201 Genève</a>
                 </p>
             </div>
             {% include '_sidebar_contact.html.twig' %}
@@ -44,10 +52,16 @@
         <article class="isolated">
             <h2 class="title-separation">
                 <span></span>
-                Notre Agence se trouve à Lausanne
+                Notre Agence se trouve à Lausanne et à Genève
             </h2>
-            <a href="http://goo.gl/maps/FpdPw"><img src="http://maps.googleapis.com/maps/api/staticmap?center=46.52339566692939,6.615421862426729&zoom=14&size=600x400&maptype=roadmap
-          &markers=color:white%7Clabel:A%7C46.52339566692939,6.615421862426729&sensor=false"></a>
+
+            <h3>Lausanne</h3>
+            <p>Notre bureau lausannois se situe au coeur du <a href="http://antistatique.net/blog/2014/04/22/laisse-pas-trainer-ton-fils-ou-la-ghettoisation-du-quartier-de-sevelin/">quartier de Sévelin</a>, à quelques pas du Flon.</p>
+            <a href="http://goo.gl/maps/FpdPw"><img src="http://maps.googleapis.com/maps/api/staticmap?center=46.52339566692939,6.615421862426729&zoom=14&size=600x400&maptype=roadmap&markers=color:white%7Clabel:A%7C46.52339566692939,6.615421862426729&sensor=false" style="max-width:100%;"></a>
+
+            <h3>Genève</h3>
+            <p>Nous sommes aussi présent à Genève dans <a href="http://geneva.impacthub.net/">l'espace Impact Hub</a></p>
+            <a href="https://goo.gl/maps/vheZI"><img src="http://maps.googleapis.com/maps/api/staticmap?center=46.210558,6.141291&zoom=15&size=600x400&maptype=roadmap&markers=color:white%7Clabel:A%7C46.210558,6.141291&sensor=false" style="max-width:100%;"></a>
         </article>
     </div>
 </section>
